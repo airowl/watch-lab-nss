@@ -15,5 +15,35 @@ html{
 
 h1{
   font-size: $font-m-xxl;
-  color: orange;
+  color: $black;
+  font-family: "Miller", "sans-serif";
+}
+
+h2{
+  font-size: $font-m-xl;
+  color: $black;
+  font-family: "Miller", "sans-serif";
+}
+
+h3{
+  font-size: $font-m-lg;
+  color: $black;
+  font-family: "Miller", "sans-serif";
+}
+
+h4{
+  font-size: $font-m-md;
+  color: $black;
+  font-family: "Miller", "sans-serif";
+}
+
+p{
+  font-size: $font-m-sm;
+  color: $text-p;
+  font-family: "Miller", "sans-serif";
+}
+
+ul li{
+  font-size: $font-m-xs;
+  color: $black;
 }
