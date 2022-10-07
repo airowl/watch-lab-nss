@@ -10,3 +10,10 @@ $breakpoints: ("small": "46rem", "medium": "48rem", "large": "62rem", "x-large":
 }
 
 // flexbox mixins
+
+@mixin d-flex($direction: row, $jst-ctn: start, $alg-items: start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jst-ctn;
+  align-items: $alg-items;
+}
