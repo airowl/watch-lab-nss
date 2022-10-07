@@ -10,17 +10,19 @@
     <li>home</li>
     <li>home</li>
   </ul>
-  <a href="#" class="btn">Discover</a>
+  <Button text="Discover" url='#' />
   <Header text='ciao' />
 </template>
 
 <script>
+import Button from './components/Button.vue'
 import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Button
 
   }
 }

@@ -52,10 +52,3 @@ a{
   text-decoration: none;
 }
 
-a.btn{
-  width: 13.5625rem;
-  height: 2.6875rem;
-  border: 1px solid $text-footer;
-  color: $text-footer;
-  @include d-flex(row, center, center);
-}
