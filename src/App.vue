@@ -10,6 +10,7 @@
     <li>home</li>
     <li>home</li>
   </ul>
+  <a href="#" class="btn">Discover</a>
 </template>
 
 <script>

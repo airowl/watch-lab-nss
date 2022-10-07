@@ -47,3 +47,16 @@ ul li{
   font-size: $font-m-xs;
   color: $black;
 }
+
+a{
+  text-decoration: none;
+}
+
+a.btn{
+  display: inline-block;
+  width: 13.5625rem;
+  height: 2.6875rem;
+  border: 1px solid $text-footer;
+  color: $text-footer;
+  @include d-flex(row, center, center);
+}
