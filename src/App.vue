@@ -11,13 +11,16 @@
     <li>home</li>
   </ul>
   <a href="#" class="btn">Discover</a>
+  <Header text='ciao' />
 </template>
 
 <script>
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
+    Header
 
   }
 }
