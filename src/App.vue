@@ -1,26 +1,23 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>History and Patriarcal Season</h1>
+  <h2>Temporary Store</h2>
+  <h3>Most Important Days on Watchlab</h3>
+  <h4>Watch/lab</h4>
+  <p>On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demoralizied by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain trouble</p>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+//@import '@/scss/main.scss';
+
 </style>
