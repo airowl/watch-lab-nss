@@ -40,11 +40,19 @@ export default {
 
 <style lang="scss" scoped>
 section#gallery{
-  @include d-flex(row, center, center);
+
+  @include breakpoint-up(large){
+    @include d-flex(row, center, center);
+  };
 
   .main-image, .gallery-image{
-    width: 50%;
-    height: 36rem;
+    width: 100%;
+    height: 25rem;
+
+    @include breakpoint-up(large){
+      width: 50%;
+      height: 36rem;
+    };
   }
 
   .main-image{
@@ -72,9 +80,13 @@ section#gallery{
         letter-spacing: 3px;
         font-family: "Montserrat-b", "sans-serif";
         position: absolute;
-        top: 10rem;
+        top: 8rem;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include breakpoint-up(large){
+          top: 10rem;
+        };
       }
     }
   }

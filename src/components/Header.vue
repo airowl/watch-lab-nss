@@ -169,7 +169,7 @@ header{
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 4;
     width: 100vw;
     height: 100%;
     background-color: $white;
@@ -185,7 +185,7 @@ header{
     };
 
     &.is-active{
-      top: 5rem;
+      top: 4rem;
     }
 
     input#search{
