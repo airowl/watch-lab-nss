@@ -12,6 +12,7 @@
   </ul>
   <Button text="Discover" url='#' />
   <Header text='ciao' />
+  <i class="fa-solid fa-magnifying-glass"></i>
 </template>
 
 <script>
