@@ -13,6 +13,7 @@
   <Button text="Discover" url='#' />-->
   <Header />
   <Hero />
+  <Heading />
   <HeadingPhoto 
     image='building-1.jpg'
     preTitle='London collection season'
@@ -33,6 +34,7 @@
 <script>
 import Gallery from './components/Gallery.vue';
 import Header from './components/Header.vue';
+import Heading from './components/Heading.vue';
 import HeadingPhoto from './components/HeadingPhoto.vue';
 import Hero from './components/Hero.vue';
 
@@ -43,6 +45,7 @@ export default {
     Hero,
     Gallery,
     HeadingPhoto,
+    Heading,
 
   }
 }
