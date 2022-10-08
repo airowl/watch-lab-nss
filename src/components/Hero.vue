@@ -22,13 +22,17 @@ export default {
 <style lang='scss' scoped>
 section#hero{
   background-image: url('../assets/images/hero.jpg');
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 36.5rem;
   position: relative;
   color: $white;
+
+  @include breakpoint-up(x-large){
+    height: 45rem;
+  };
 
   div.hero-content{
     position: relative;
