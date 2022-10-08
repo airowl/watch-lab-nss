@@ -3,7 +3,7 @@
 
     <nav class="navbar">
       <div id="logo">
-        <h4>Watch/lab</h4>
+        <h1>Watch/lab</h1>
       </div>
 
       <div class="collapse">
@@ -119,10 +119,6 @@ header{
       @include breakpoint-up(large){
         width: 100%;
       };
-
-      h4{
-        letter-spacing: 4px;
-      }
     }
 
     div.collapse{

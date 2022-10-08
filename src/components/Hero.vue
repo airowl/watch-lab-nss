@@ -4,7 +4,7 @@
 
     <div class="hero-content">
       <p class="up-b text-center">London collection season</p>
-      <h1 class="text-center">New Selection Of <br/> Herny London</h1>
+      <h2 class="text-center">New Selection Of <br/> Herny London</h2>
       <p class="sm text-center">An estimable experience in the modern collection house</p>
       <Button text="Discover" url="#" />
     </div>
@@ -41,9 +41,9 @@ section#hero{
     width: 100%;
     @include d-flex(column, center, center);
 
-    h1{
+    h2{
       margin-bottom: 35px;
-      letter-spacing: 3px;
+      color: $white;
 
       @include breakpoint-up(large){
         font-size: 3.5rem;

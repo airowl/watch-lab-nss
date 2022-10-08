@@ -2,8 +2,8 @@
   <section id='heading-photo' class="container heading-photo" :class="isRightTitle === true ? 'invert' : ''">
     <div class="content">
       <p class="up-b text-center">{{preTitle}}</p>
-      <h2 class="text-center">{{title}}</h2>
-      <p class="mil text-center">
+      <h3 class="text-center">{{title}}</h3>
+      <p class="mer text-center">
         {{text}}
       </p>
       <Button text="Discover" url="#" />
@@ -55,12 +55,10 @@ section#heading-photo{
   .content{
     @include d-flex(column, center, center);
 
-    h2{
+    h3{
       margin-bottom: 2rem;
-      letter-spacing: 1px;
 
       @include breakpoint-up(large){
-        font-size: 2.5rem;
         margin-bottom: 6rem;
         padding: 0 6rem;
       };
@@ -76,7 +74,7 @@ section#heading-photo{
         };
       }
 
-      &.mil{
+      &.mer{
         margin-bottom: 45px;
         padding: 0 1rem;
 

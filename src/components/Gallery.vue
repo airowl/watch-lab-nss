@@ -4,7 +4,7 @@
       <div class="overlay"></div>
       <div class="content">
         <p class="up-b text-center">Instagram</p>
-        <h1 class="text-center">Discover <br/> Watch Lab</h1>
+        <h2 class="text-center">Discover <br/> Watch Lab</h2>
       </div>
     </div>
     <div class="gallery-image">
@@ -69,11 +69,12 @@ section#gallery{
       width: 100%;
       height: 100%;
 
-      h1{
+      h2{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        color: $white;
       }
 
       p{
