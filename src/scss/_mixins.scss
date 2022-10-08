@@ -17,3 +17,10 @@ $breakpoints: ("small": "46rem", "medium": "48rem", "large": "62rem", "x-large":
   justify-content: $jst-ctn;
   align-items: $alg-items;
 }
+
+//transition
+@mixin transition {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}

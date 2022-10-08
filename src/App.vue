@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <!--<img alt="Vue logo" src="./assets/logo.png">
   <h1>History and Patriarcal Season</h1>
   <h2>Temporary Store</h2>
   <h3>Most Important Days on Watchlab</h3>
@@ -10,20 +10,17 @@
     <li>home</li>
     <li>home</li>
   </ul>
-  <Button text="Discover" url='#' />
+  <Button text="Discover" url='#' />-->
   <Header text='ciao' />
-  <i class="fa-solid fa-magnifying-glass"></i>
 </template>
 
 <script>
-import Button from './components/Button.vue'
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Button
 
   }
 }
