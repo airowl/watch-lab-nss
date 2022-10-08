@@ -3,7 +3,7 @@
     <div class="main-image">
       <div class="overlay"></div>
       <div class="content">
-        <p class="uppercase text-center">Instagram</p>
+        <p class="up-b text-center">Instagram</p>
         <h1 class="text-center">Discover <br/> Watch Lab</h1>
       </div>
     </div>
@@ -77,8 +77,6 @@ section#gallery{
       }
 
       p{
-        letter-spacing: 3px;
-        font-family: "Montserrat-b", "sans-serif";
         position: absolute;
         top: 8rem;
         left: 50%;

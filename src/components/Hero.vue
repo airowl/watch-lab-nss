@@ -3,9 +3,9 @@
     <div class="overlay"></div>
 
     <div class="hero-content">
-      <p class="uppercase text-center">London collection season</p>
+      <p class="up-b text-center">London collection season</p>
       <h1 class="text-center">New Selection Of <br/> Herny London</h1>
-      <p class="text-center">An estimable experience in the modern collection house</p>
+      <p class="sm text-center">An estimable experience in the modern collection house</p>
       <Button text="Discover" url="#" />
     </div>
   </section>
@@ -48,15 +48,12 @@ section#hero{
 
     p{
       
-      &:first-of-type{
+      &.up-b{
         margin-bottom: 48px;
-        letter-spacing: 3px;
-        font-family: "Montserrat-b", "sans-serif";
       }
 
-      &:last-of-type{
+      &.sm{
         margin-bottom: 45px;
-        font-family: "Montserrat-r", "sans-serif";
       }
     }
   }

@@ -1,9 +1,9 @@
 <template>
   <section id='heading-photo' class="container heading-photo" :class="isRightTitle === true ? 'invert' : ''">
     <div class="content">
-      <p class="uppercase text-center">{{preTitle}}</p>
+      <p class="up-b text-center">{{preTitle}}</p>
       <h2 class="text-center">{{title}}</h2>
-      <p class="text-center">
+      <p class="mil text-center">
         {{text}}
       </p>
       <Button text="Discover" url="#" />
@@ -68,23 +68,16 @@ section#heading-photo{
 
     p{
       
-      &:first-of-type{
+      &.up-b{
         margin-bottom: 1rem;
-        letter-spacing: 3px;
-        font-family: "Montserrat-b", "sans-serif";
 
         @include breakpoint-up(large){
           margin-bottom: 2.3rem;
         };
       }
 
-      &:last-of-type{
+      &.mil{
         margin-bottom: 45px;
-        font-family: "Miller", "sans-serif";
-        color: $text-p;
-        line-height: 2;
-        font-size: .8rem;
-        letter-spacing: 2px;
         padding: 0 1rem;
 
         @include breakpoint-up(large){
