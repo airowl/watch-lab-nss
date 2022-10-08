@@ -16,7 +16,6 @@ html{
 
 h1{
   font-size: $font-m-xxl;
-  color: $black;
   font-family: "Miller", "sans-serif";
 }
 
@@ -39,8 +38,6 @@ h4{
 
 p{
   font-size: $font-m-sm;
-  color: $text-p;
-  font-family: "Miller", "sans-serif";
 }
 
 ul li{
@@ -58,5 +55,23 @@ ul{
 
 a{
   text-decoration: none;
+}
+
+div.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba($color: $black, $alpha: .4);
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-center{
+  text-align: center;
 }
 

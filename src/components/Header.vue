@@ -171,7 +171,7 @@ header{
     bottom: 0;
     z-index: 3;
     width: 100vw;
-    height: 5rem;
+    height: 100%;
     background-color: $white;
     @include d-flex(row, center, center);
     @include transition;
