@@ -33,7 +33,7 @@ h3{
 }
 
 h4{
-  font-size: $font-m-xl; // ok size
+  font-size: 1.6rem; // ok size
   font-family: "Montserrat-b", "sans-serif";
 }
 
@@ -44,8 +44,12 @@ p{
 }
 
 ul li{
-  font-size: $font-m-xl;
+  font-size: $font-m-md;
   color: $black;
+
+  @include breakpoint-up(large){
+    font-size: $font-d-sm; // ok size
+  };
 }
 
 ul{
