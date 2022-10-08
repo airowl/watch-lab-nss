@@ -13,9 +13,11 @@
   <Button text="Discover" url='#' />-->
   <Header />
   <Hero />
+  <Gallery />
 </template>
 
 <script>
+import Gallery from './components/Gallery.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 
@@ -24,6 +26,7 @@ export default {
   components: {
     Header,
     Hero,
+    Gallery,
 
   }
 }
