@@ -105,8 +105,14 @@ div.overlay{
   background-color: rgba($color: $black, $alpha: .4);
 }
 
-.uppercase{
-  text-transform: uppercase;
+div.overlay-light{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba($color: $bg-logo, $alpha: .8);
 }
 
 .text-center{

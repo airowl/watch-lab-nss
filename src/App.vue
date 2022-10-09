@@ -29,9 +29,11 @@
     :isRightTitle=true
   />
   <Gallery />
+  <Contact />
 </template>
 
 <script>
+import Contact from './components/Contact.vue';
 import Gallery from './components/Gallery.vue';
 import Header from './components/Header.vue';
 import Heading from './components/Heading.vue';
@@ -46,6 +48,7 @@ export default {
     Gallery,
     HeadingPhoto,
     Heading,
+    Contact,
 
   }
 }
