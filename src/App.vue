@@ -30,9 +30,11 @@
   />
   <Gallery />
   <Contact />
+  <Footer />
 </template>
 
 <script>
+import Footer from './components/Footer.vue';
 import Contact from './components/Contact.vue';
 import Gallery from './components/Gallery.vue';
 import Header from './components/Header.vue';
@@ -49,7 +51,7 @@ export default {
     HeadingPhoto,
     Heading,
     Contact,
-
+    Footer,
   }
 }
 </script>
