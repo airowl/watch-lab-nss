@@ -26,7 +26,8 @@
       </div>
     </div>
     <div class="bottom-footer">
-      
+      <p>Copyright Watch/Lab all rights reserved</p>
+      <p>website by nssfactory</p>
     </div>
   </footer>
 </template>
@@ -99,12 +100,13 @@ export default {
 
 <style lang="scss" scoped>
 footer{
+
   div.top-footer{
     background-color: $bg-footer;
     padding: 4rem 2rem;
 
     @include breakpoint-up(large){
-      padding: 7.38rem 8.88rem 15rem;
+      padding: 7.38rem 8.88rem 12rem;
     };
 
     h1{
@@ -174,6 +176,17 @@ footer{
       }
     }
 
+  }
+
+  div.bottom-footer{
+    @include d-flex(row, space-between, center);
+    padding: 2rem 1rem;
+    background-color: #303030;
+    color: $text-footer;
+
+    @include breakpoint-up(large){
+      padding: 2rem 9rem;
+    };
   }
 }
 </style>
