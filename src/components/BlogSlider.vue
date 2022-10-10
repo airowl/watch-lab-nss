@@ -46,6 +46,7 @@ export default {
   data: () => {
     return {
       indexActive: 0,
+      autoPlay: null,
       sliderData: [
         {
           preTitle: 'press',
@@ -70,23 +71,31 @@ export default {
   },
   methods: {
     upIndexActive(){
+      this.stopTimeSlide();
       if (this.indexActive == this.sliderData.length - 1) {
           this.indexActive = 0;
       } else {
         this.indexActive++;
       }
+      this.timeSlide();
     },
     downIndexActive(){
+      this.stopTimeSlide();
       if (this.indexActive == 0) {
           this.indexActive = this.sliderData.length - 1;
       } else {
         this.indexActive--;
       }
+      this.timeSlide();
     },
     timeSlide(){
-      setInterval(() =>{
+      this.autoPlay = setInterval(() =>{
         this.upIndexActive();
       }, 5000);
+    },
+    stopTimeSlide(){
+      clearInterval(this.autoPlay);
+      this.autoPlay = null;
     }
   },
   mounted() {
@@ -97,7 +106,7 @@ export default {
 
 <style lang='scss' scoped>
 section#blog-slider{
-  @include d-flex(column-reverse, center, center);
+  @include d-flex(column, center, center);
 
   @include breakpoint-up(large){
     @include d-flex(row, center, center);
@@ -105,7 +114,6 @@ section#blog-slider{
 
   .slider, .content{
     width: 100%;
-    height: 25rem;
 
     @include breakpoint-up(large){
       width: 50%;
@@ -127,25 +135,44 @@ section#blog-slider{
   .slider{
     background-color: #f8f9f8;
     position: relative;
+    height: 50rem;
+
+    @include breakpoint-up(large){
+      height: 36rem;
+    };
 
     div.carousel{
-      width: 50rem;
-      height: 28rem;
+      width: 100%;
+      height: 100%;
       position: absolute;
       bottom: 0;
       right: 0;
 
+      @include breakpoint-up(large){
+        height: 28rem;
+        width: 50rem;
+      };
+
       div.carousel-inner{
         height: 100%;
         width: 100%;
-        @include d-flex(row);
+        @include d-flex(column, center, center);
         @include transition;
+
+        @include breakpoint-up(large){
+          @include d-flex(row, center, center);
+        };
 
         div.wrapper-image{
           overflow: hidden;
-          width: 60%;
-          height: 100%;
+          width: 100%;
+          height: 60%;
           position: relative;
+
+          @include breakpoint-up(large){
+            width: 60%;
+            height: 100%;
+          };
 
           div.image{
             background-position: center;
@@ -167,15 +194,28 @@ section#blog-slider{
         }
   
         div.description{
-          width: 40%;
-          height: 100%;
+          width: 100%;
+          height: 40%;
           padding-left: 2rem;
+          padding-top: 2rem;
+          padding-right: 2rem;
+
+          @include breakpoint-up(large){
+            width: 40%;
+            height: 100%;
+            padding-top: 0;
+            padding-right: 0;
+          };
 
           div.wrapper-text{
             position: relative;
-            height: 45%;
+            height: 70%;
             @include d-flex(row, center, center);
             overflow: hidden;
+
+            @include breakpoint-up(large){
+            height: 45%;
+            };
 
             div.text{
               position: absolute;
