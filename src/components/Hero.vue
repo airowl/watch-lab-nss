@@ -1,38 +1,57 @@
 <template>
   <section id="hero">
-    <div class="overlay"></div>
+    <div class="wrapper">
+      <div class="overlay"></div>
 
-    <div class="hero-content">
-      <p class="up-b text-center">London collection season</p>
-      <h2 class="text-center">New Selection Of <br/> Herny London</h2>
-      <p class="sm text-center">An estimable experience in the modern collection house</p>
-      <Button text="Discover" url="#" />
+      <div class="hero-content">
+        <p class="up-b text-center">London collection season</p>
+        <h2 class="text-center">New Selection Of <br/> Herny London</h2>
+        <p class="sm text-center">An estimable experience in the modern collection house</p>
+        <Button text="Discover" url="#" />
+      </div>
     </div>
+
+    <HeroSlider />
+
   </section>
 </template>
 
 <script>
-import Button from './Button.vue'
+import Button from './Button.vue';
+import HeroSlider from './HeroSlider.vue';
+
 export default {
-  components: { Button },
+  components: { 
+    Button ,
+    HeroSlider,
+    },
   name: 'mainHero',
 }
 </script>
 
 <style lang='scss' scoped>
 section#hero{
-  background-image: url('../assets/images/hero.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
-  height: 36.5rem;
   position: relative;
-  color: $white;
 
   @include breakpoint-up(x-large){
     height: 45rem;
   };
+  
+  div.wrapper{
+    background-image: url('../assets/images/hero.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 36.5rem;
+    color: $white;
+
+    @include breakpoint-up(x-large){
+      height: 45rem;
+    };
+
+  }
 
   div.hero-content{
     position: relative;
