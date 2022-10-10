@@ -80,7 +80,6 @@ section#heading-photo{
 
         @include breakpoint-up(large){
           padding: 0 3.5rem;
-          font-size: 1rem;
         };
       }
     }

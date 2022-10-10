@@ -47,8 +47,8 @@ h3{
 }
 
 h4{
-  font-size: $logo; // ok size
-  font-family: "Montserrat-b", "sans-serif";
+  font-size: 2rem; // ok size
+  font-family: "Miller", "sans-serif";
 }
 
 p{
@@ -72,7 +72,7 @@ p{
     letter-spacing: 2px;
 
     @include breakpoint-up(large){
-      font-size: .9rem;
+      
     };
   }
 
