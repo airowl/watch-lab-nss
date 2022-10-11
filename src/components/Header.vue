@@ -9,11 +9,10 @@
       <div class="collapse">
         <i class="fa-solid fa-magnifying-glass fa-2xl" @click="setIsOpenSearch()"></i>
 
-        <div class="hamburger" :class='isOpenHam ? "is-active" : "" ' id="hamburger-1" @click="setIsOpenHam()">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
+        <Hamburger 
+          :isOpenHam="isOpenHam" 
+          @click="setIsOpenHam()"
+        />
       </div>
 
     </nav>
@@ -36,12 +35,11 @@
 </template>
 
 <script>
+import Hamburger from './Hamburger.vue';
 
 export default {
+  components: { Hamburger },
   name: 'mainHeader',
-  props: {
-    text: String
-  },
   data: () => {
     return {
         headerData: [
@@ -129,36 +127,6 @@ header{
       @include breakpoint-up(large){
         display: none
       };
-
-      .hamburger .line{
-        width: 2.5rem;
-        height: .19rem;
-        background-color: $black;
-        display: block;
-        margin: 0.5rem auto;
-        @include transition;
-      }
-
-      #hamburger-1.is-active .line:nth-child(2){
-        opacity: 0;
-      }
-
-      $size-translate: .69rem;
-      $size-translate-negative: -.69rem;
-
-      #hamburger-1.is-active .line:nth-child(1){
-        -webkit-transform: translateY($size-translate) rotate(45deg);
-        -ms-transform: translateY($size-translate) rotate(45deg);
-        -o-transform: translateY($size-translate) rotate(45deg);
-        transform: translateY($size-translate) rotate(45deg);
-      }
-
-      #hamburger-1.is-active .line:nth-child(3){
-        -webkit-transform: translateY($size-translate-negative) rotate(-45deg);
-        -ms-transform: translateY($size-translate-negative) rotate(-45deg);
-        -o-transform: translateY($size-translate-negative) rotate(-45deg);
-        transform: translateY($size-translate-negative) rotate(-45deg);
-      }
     }
 
   }
