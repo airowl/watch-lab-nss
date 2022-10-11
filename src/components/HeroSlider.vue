@@ -114,14 +114,6 @@ section#hero-slider{
         left: 0;
       }
   
-      h5{
-        font-family: "Miller", "sans-serif";
-        font-size: 1rem;
-        position: relative;
-        z-index: 3;
-        width: 50%;
-      }
-  
     }
   }
 
