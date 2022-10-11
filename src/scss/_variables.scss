@@ -8,11 +8,8 @@ $black: #000;
 $text-p: #858483;
 $text-footer: #d4ac84;
 
-// font size
+// fonts family
 
-$logo: 1.7rem;
-
-// font family
 @font-face {
   font-family: 'Montserrat-r';
   src: local('Montserrat-r'), url('@/scss/fonts/Montserrat-Regular.ttf')  format('truetype'), 
