@@ -33,10 +33,6 @@ export default {
 section#hero{
   width: 100vw;
   position: relative;
-
-  @include breakpoint-up(x-large){
-    height: 45rem;
-  };
   
   div.wrapper{
     background-image: url('../assets/images/hero.jpg');
@@ -48,7 +44,7 @@ section#hero{
     color: $white;
 
     @include breakpoint-up(x-large){
-      height: 45rem;
+      height: 40rem;
     };
 
   }

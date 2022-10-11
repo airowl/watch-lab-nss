@@ -105,13 +105,13 @@ header{
 
     @include breakpoint-up(large){
       @include d-flex(row, start, center);
-      width: 18vw;
+      width: 20vw;
     };
 
     div#logo{
       text-transform: uppercase;
       background-color: $bg-logo;
-      width: 62vw;
+      width: 60vw;
       height: 100%;
       color: $white;
       @include d-flex(row, center, center);
@@ -212,10 +212,6 @@ header{
       height: 100%;
       z-index: 5;
       @include d-flex(row, start, center);
-    };
-
-    @include breakpoint-up(x-large){
-      @include d-flex(row, center, center);
     };
     
 
