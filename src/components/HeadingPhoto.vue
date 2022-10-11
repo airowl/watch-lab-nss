@@ -8,7 +8,9 @@
       </p>
       <Button text="Discover" url="#" />
     </div>
-    <div class="main-image" :style="{ backgroundImage: `url(${require('@/assets/images/' + image)})` }"></div>
+    <a class="main-image" :href="url">
+      <div class="image" :style="{ backgroundImage: `url(${require('@/assets/images/' + image)})` }"></div>
+    </a>
   </section>
 </template>
 
@@ -23,6 +25,7 @@ export default {
     title: String,
     text: String,
     isRightTitle: Boolean,
+    url: String
   },
   components: {
     Button
@@ -42,7 +45,7 @@ section#heading-photo{
     }
   };
 
-  .main-image, .content{
+  a.main-image, .content{
     width: 100vw;
     height: 40vh;
 
@@ -89,9 +92,20 @@ section#heading-photo{
     }
   }
 
-  .main-image{
-    @include default-bg;
-    @include position(relative);
+  a.main-image{
+    display: inline-block;
+    overflow: hidden;
+
+    .image{
+      width: 100%;
+      height: 100%;
+      @include default-bg;
+      @include transition;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
   }
 }
 </style>

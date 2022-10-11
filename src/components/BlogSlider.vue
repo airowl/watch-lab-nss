@@ -11,8 +11,8 @@
     <div class="slider">
       <div class="carousel">
         <div class="wrapper-image">
-          <div class="image" :class="i === indexActive ? 'is-active' : ''" v-for="(e, i) in sliderData" :key='i'  :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
-          </div>
+          <a :href="e.url" class="image" :class="i === indexActive ? 'is-active' : ''" v-for="(e, i) in sliderData" :key='i'  :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
+          </a>
         </div>
         <div class="description">
           <div class="wrapper-text">
@@ -23,9 +23,11 @@
               <p class="up-b">
                 {{e.date}}
               </p>
-              <h4>
-                {{e.title}}
-              </h4>
+              <a :href="e.url">
+                <h4>
+                  {{e.title}}
+                </h4>
+              </a>
             </div>
           </div>
           <div class="icons">
@@ -51,18 +53,21 @@ export default {
           title: 'Most Important Days on Watchlab',
           date: '18 settembre 2015',
           image: 'hero-slider.jpg',
+          url: '#',
         },
         {
           preTitle: 'press',
           title: 'Most Important Days',
           date: '18 settembre 2015',
           image: 'gallery-1.jpg',
+          url: '#',
         },
         {
           preTitle: 'press',
           title: 'Most Important',
           date: '18 settembre 2015',
           image: 'gallery-2.jpg',
+          url: '#',
         },
       ]
     }
@@ -167,16 +172,22 @@ section#blog-slider{
             height: 100%;
           };
 
-          div.image{
+          a.image{
+            display: inline-block;
             @include default-bg;
-            @include position(absolute, $top: 0, $left: 5rem, $bottom: 0, $right: 0);
+            @include position(absolute, $top: 0, $left: 100%, $bottom: 0, $right: 0);
             opacity: 0;
             @include transition;
   
             &.is-active{
               opacity: 1;
               left: 0;
+              
+              &:hover{
+                transform: scale(1.1);
+              }
             }
+
           }
         }
   
@@ -218,9 +229,15 @@ section#blog-slider{
                 color: $bg-logo;
                 margin-top: .5rem;
               }
-    
-              h4{
+
+              a{
+                display: inline-block;
                 margin-top: 2.2rem;
+                color: $black;
+
+                &:hover{
+                  text-decoration: underline;
+                }
               }
             }
           }

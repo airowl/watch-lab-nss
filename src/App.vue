@@ -9,6 +9,7 @@
       title='Temporary Store'
       text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire'
       :isRightTitle=false
+      url='#'
     />
     <HeadingPhoto 
       image='building-2.jpg'
@@ -16,6 +17,7 @@
       title='New Selection Of Herny London'
       text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire'
       :isRightTitle=true
+      url='#'
     />
     <BlogSlider />
     <Gallery />

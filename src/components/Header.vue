@@ -2,9 +2,9 @@
   <header>
 
     <nav class="navbar">
-      <div id="logo">
+      <a href="/" id="logo">
         <h1>Watch/lab</h1>
-      </div>
+      </a>
 
       <div class="collapse">
         <i class="fa-solid fa-magnifying-glass fa-2xl" @click="setIsOpenSearch()"></i>
@@ -106,7 +106,7 @@ header{
       width: 20vw;
     };
 
-    div#logo{
+    a#logo{
       background-color: $bg-logo;
       width: 60vw;
       height: 100%;

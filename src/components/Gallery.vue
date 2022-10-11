@@ -2,13 +2,13 @@
   <section id="gallery">
     <div class="main-image" :class="i > 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
       <div class="overlay dark"></div>
-      <div class="content">
+      <a :href="e.url" class="content">
         <p class="up-b text-center">Instagram</p>
         <h2 class="text-center">Discover <br/> Watch Lab</h2>
-      </div>
+      </a>
     </div>
     <div class="gallery-image">
-      <div class="image" :class="i <= 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }"></div>
+      <a :href="e.url" class="image" :class="i <= 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }"></a>
     </div>
   </section>
 </template>
@@ -22,18 +22,23 @@ export default {
       galleryData: [
         {
           image: 'gallery-1.jpg',
+          url: '#',
         },
         {
           image: 'gallery-2.jpg',
+          url: '#',
         },
         {
           image: 'gallery-3.jpg',
+          url: '#',
         },
         {
           image: 'gallery-4.jpg',
+          url: '#',
         },
         {
           image: 'gallery-5.jpg',
+          url: '#',
         },
       ]
     }
@@ -67,7 +72,8 @@ section#gallery{
       display: none;
     }
 
-    .content{
+    a.content{
+      display: inline-block;
       color: $white;
       @include position(relative);
       z-index: 5;
@@ -95,7 +101,8 @@ section#gallery{
     @include d-flex(row, start, center);
     flex-wrap: wrap;
 
-    .image{
+    a.image{
+      display: inline-block;
       width: 50%;
       height: 50%;
       @include default-bg;
