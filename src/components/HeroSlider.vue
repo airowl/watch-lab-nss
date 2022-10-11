@@ -49,23 +49,31 @@ export default {
   },
   methods: {
     upIndexActive(){
+      this.stopTimeSlide();
       if (this.indexActive == this.sliderData.length - 1) {
           this.indexActive = 0;
       } else {
         this.indexActive++;
       }
+      this.timeSlide();
     },
     downIndexActive(){
+      this.stopTimeSlide();
       if (this.indexActive == 0) {
           this.indexActive = this.sliderData.length - 1;
       } else {
         this.indexActive--;
       }
+      this.timeSlide();
     },
     timeSlide(){
-      setInterval(() =>{
+      this.autoPlay = setInterval(() =>{
         this.upIndexActive();
       }, 5000);
+    },
+    stopTimeSlide(){
+      clearInterval(this.autoPlay);
+      this.autoPlay = null;
     }
   },
   mounted() {
