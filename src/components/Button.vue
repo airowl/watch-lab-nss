@@ -21,5 +21,11 @@ a.btn{
   border: 1px solid $text-footer;
   color: $text-footer;
   @include d-flex(row, center, center);
+  @include transition;
+
+  &:hover{
+    color: $white;
+    background-color: $text-footer;
+  }
 }
 </style>
