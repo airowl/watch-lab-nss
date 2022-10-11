@@ -105,9 +105,7 @@ section#hero-slider{
 
     div.content{
       padding: 1.9rem 1.13rem 1.13rem;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include default-bg;
       opacity: 0;
       @include position(absolute, $top: 0, $left: 19.5rem, $bottom: 0, $right: 0);
       @include transition;

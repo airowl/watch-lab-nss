@@ -25,9 +25,7 @@ export default {
 <style lang="scss" scoped>
 section#contact{
   background-image: url('../assets/images/contact.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include default-bg;
   height: 15.5rem;
   width: 100%;
   @include position(relative);

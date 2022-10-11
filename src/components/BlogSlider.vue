@@ -168,9 +168,7 @@ section#blog-slider{
           };
 
           div.image{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include default-bg;
             @include position(absolute, $top: 0, $left: 5rem, $bottom: 0, $right: 0);
             opacity: 0;
             @include transition;

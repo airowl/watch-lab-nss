@@ -36,9 +36,7 @@ section#hero{
   
   div.wrapper{
     background-image: url('../assets/images/hero.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include default-bg(bottom);
     width: 100%;
     height: 36.5rem;
     color: $white;

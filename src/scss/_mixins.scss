@@ -31,3 +31,9 @@ $breakpoints: ("small": "46rem", "medium": "48rem", "large": "62rem", "x-large":
   bottom: $bottom;
   left: $left;
 }
+
+@mixin default-bg($position: center){
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

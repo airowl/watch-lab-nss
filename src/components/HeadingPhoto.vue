@@ -90,9 +90,7 @@ section#heading-photo{
   }
 
   .main-image{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include default-bg;
     @include position(relative);
   }
 }

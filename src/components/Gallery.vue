@@ -60,9 +60,7 @@ section#gallery{
   }
 
   .main-image{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include default-bg;
     @include position(relative);
 
     &.hidden{
@@ -100,9 +98,7 @@ section#gallery{
     .image{
       width: 50%;
       height: 50%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include default-bg;
 
       &.hidden{
         display: none;
