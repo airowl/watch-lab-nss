@@ -4,7 +4,7 @@
     <div class="carousel">
 
       <div class="content" :class="i === indexActive ? 'is-active' : ''" v-for="(e, i) in sliderData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
-        <div class="overlay"></div>
+        <div class="overlay dark"></div>
         <h5>{{e.text}}</h5>
       </div>
     </div>
