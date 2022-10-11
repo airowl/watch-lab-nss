@@ -1,6 +1,6 @@
 <template>
   <section id="gallery" class="container">
-    <div class="main-image">
+    <div class="main-image" :class="i > 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
       <div class="overlay"></div>
       <div class="content">
         <p class="up-b text-center">Instagram</p>
@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="gallery-image">
-      <div class="image" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }"></div>
+      <div class="image" :class="i <= 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }"></div>
     </div>
   </section>
 </template>
@@ -20,6 +20,9 @@ export default {
   data: () => {
     return {
       galleryData: [
+        {
+          image: 'gallery-1.jpg',
+        },
         {
           image: 'gallery-2.jpg',
         },
@@ -56,11 +59,14 @@ section#gallery{
   }
 
   .main-image{
-    background-image: url('../assets/images/gallery-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    &.hidden{
+      display: none;
+    }
 
     .content{
       color: $white;
@@ -97,9 +103,13 @@ section#gallery{
     .image{
       width: 50%;
       height: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &.hidden{
+        display: none;
+      }
     }
   }
 }
