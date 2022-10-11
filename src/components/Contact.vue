@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="container">
+  <section id="contact">
     <div class="overlay-light"></div>
     <div class="content">
       <h2 class="text-center">

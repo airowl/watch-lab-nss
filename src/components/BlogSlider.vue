@@ -1,5 +1,5 @@
 <template>
-  <section id='blog-slider' class="container">
+  <section id='blog-slider'>
     <div class="content">
       <h2>
         Press from <br/> Watch Lab Studio
@@ -122,6 +122,11 @@ section#blog-slider{
   }
 
   .content{
+    padding: 0 1rem;
+
+    @include breakpoint-up(large){
+      padding: 0;
+    };
     
     p{
       margin-top: 3rem;

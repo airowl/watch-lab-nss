@@ -1,5 +1,5 @@
 <template>
-  <section id="gallery" class="container">
+  <section id="gallery">
     <div class="main-image" :class="i > 0 ? 'hidden' : ''" v-for="(e, i) in galleryData" :key='i' :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
       <div class="overlay"></div>
       <div class="content">
