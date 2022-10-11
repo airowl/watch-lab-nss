@@ -1,5 +1,5 @@
 <template>
-  <section id='blog-slider'>
+  <section id='blog-slider' data-aos="fade-up">
     <div class="content">
       <h2>
         Press from <br/> Watch Lab Studio

@@ -1,5 +1,5 @@
 <template>
-  <section id="heading" class="container">
+  <section id="heading" data-aos="fade-up">
     <h2>
       History and Patriarcal Season
     </h2>

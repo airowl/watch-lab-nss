@@ -1,5 +1,5 @@
 <template>
-  <section id='heading-photo' :class="isRightTitle === true ? 'invert' : ''">
+  <section data-aos="fade-up" id='heading-photo' :class="isRightTitle === true ? 'invert' : ''">
     <div class="content">
       <p class="up-b text-center">{{preTitle}}</p>
       <h3 class="text-center">{{title}}</h3>

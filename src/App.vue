@@ -35,6 +35,8 @@ import Heading from './components/Heading.vue';
 import HeadingPhoto from './components/HeadingPhoto.vue';
 import Hero from './components/Hero.vue';
 import BlogSlider from './components/BlogSlider.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default {
   name: 'App',
@@ -47,7 +49,10 @@ export default {
     Contact,
     Footer,
     BlogSlider,
-  }
+  },
+  mounted() {
+    AOS.init()
+  },
 }
 </script>
 

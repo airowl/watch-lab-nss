@@ -1,5 +1,5 @@
 <template>
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <div class="overlay light"></div>
     <div class="content">
       <h2 class="text-center">
