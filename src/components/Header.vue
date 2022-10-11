@@ -131,11 +131,11 @@ header{
       };
 
       .hamburger .line{
-        width: 40px;
-        height: 3px;
+        width: 2.5rem;
+        height: .19rem;
         background-color: $black;
         display: block;
-        margin: 8px auto;
+        margin: 0.5rem auto;
         @include transition;
       }
 
@@ -143,18 +143,20 @@ header{
         opacity: 0;
       }
 
+      $size-translate: .69rem;
+
       #hamburger-1.is-active .line:nth-child(1){
-        -webkit-transform: translateY(11px) rotate(45deg);
-        -ms-transform: translateY(11px) rotate(45deg);
-        -o-transform: translateY(11px) rotate(45deg);
-        transform: translateY(11px) rotate(45deg);
+        -webkit-transform: translateY($size-translate) rotate(45deg);
+        -ms-transform: translateY($size-translate) rotate(45deg);
+        -o-transform: translateY($size-translate) rotate(45deg);
+        transform: translateY($size-translate) rotate(45deg);
       }
 
       #hamburger-1.is-active .line:nth-child(3){
-        -webkit-transform: translateY(-11px) rotate(-45deg);
-        -ms-transform: translateY(-11px) rotate(-45deg);
-        -o-transform: translateY(-11px) rotate(-45deg);
-        transform: translateY(-11px) rotate(-45deg);
+        -webkit-transform: translateY($size-translate) rotate(-45deg);
+        -ms-transform: translateY($size-translate) rotate(-45deg);
+        -o-transform: translateY($size-translate) rotate(-45deg);
+        transform: translateY($size-translate) rotate(-45deg);
       }
     }
 

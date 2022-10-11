@@ -57,7 +57,7 @@ section#hero{
     @include d-flex(column, center, center);
 
     h2{
-      margin-bottom: 35px;
+      margin-bottom: 2.19rem; // 35px
       color: $white;
 
       @include breakpoint-up(large){
@@ -68,11 +68,11 @@ section#hero{
     p{
       
       &.up-b{
-        margin-bottom: 48px;
+        margin-bottom: 3rem; //48px
       }
 
       &.sm{
-        margin-bottom: 45px;
+        margin-bottom: 2.81rem; // 45px
       }
     }
   }

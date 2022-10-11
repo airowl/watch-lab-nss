@@ -75,7 +75,7 @@ section#heading-photo{
       }
 
       &.mer{
-        margin-bottom: 45px;
+        margin-bottom: 2.81rem; // 45px
         padding: 0 1rem;
 
         @include breakpoint-up(large){
