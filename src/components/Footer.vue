@@ -102,7 +102,7 @@ export default {
 footer{
 
   div.top-footer{
-    background-color: $bg-footer;
+    background-color: $bg-footer-top;
     padding: 4rem 2rem;
 
     @include breakpoint-up(large){
@@ -179,7 +179,7 @@ footer{
   div.bottom-footer{
     @include d-flex(row, space-between, center);
     padding: 2rem 1rem;
-    background-color: #303030;
+    background-color: $bg-footer-bottom;
     color: $text-footer;
 
     @include breakpoint-up(large){

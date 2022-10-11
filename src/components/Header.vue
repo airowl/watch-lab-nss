@@ -107,7 +107,6 @@ header{
     };
 
     div#logo{
-      text-transform: uppercase;
       background-color: $bg-logo;
       width: 60vw;
       height: 100%;
