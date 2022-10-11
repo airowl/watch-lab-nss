@@ -93,7 +93,7 @@ section#heading-photo{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    @include position(relative);
   }
 }
 </style>

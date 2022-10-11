@@ -23,3 +23,11 @@ $breakpoints: ("small": "46rem", "medium": "48rem", "large": "62rem", "x-large":
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null){
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

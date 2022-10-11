@@ -63,7 +63,7 @@ section#gallery{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    @include position(relative);
 
     &.hidden{
       display: none;
@@ -71,23 +71,19 @@ section#gallery{
 
     .content{
       color: $white;
-      position: relative;
+      @include position(relative);
       z-index: 5;
       width: 100%;
       height: 100%;
 
       h2{
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include position(absolute, $top: 50%, $left: 50%);
         transform: translate(-50%, -50%);
         color: $white;
       }
 
       p{
-        position: absolute;
-        top: 5rem;
-        left: 50%;
+        @include position(absolute, $top: 5rem, $left: 50%);
         transform: translate(-50%, -50%);
 
         @include breakpoint-up(large){

@@ -86,7 +86,7 @@ export default {
 section#hero-slider{
   width: 100vw;
   height: 40vh;
-  position: relative;
+  @include position(relative);
   z-index: 3;
   color: $white;
   
@@ -94,28 +94,22 @@ section#hero-slider{
   @include breakpoint-up(large){
     height: 14rem;
     width: 19.5rem;
-    position: absolute;
-    bottom: 0;
-    right: 5rem;
+    @include position(absolute, $bottom: 0, $right: 5rem);
   };
 
   div.carousel{
     height: 100%;
     overflow: hidden;
     @include d-flex(row, center, center);
-    position: relative;
+    @include position(relative);
 
     div.content{
-      top: 0;
-      left: 19.5rem;
-      right: 0;
-      bottom: 0;
       padding: 1.9rem 1.13rem 1.13rem;
-      position: absolute;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0;
+      @include position(absolute, $top: 0, $left: 19.5rem, $bottom: 0, $right: 0);
       @include transition;
   
       &.is-active{
@@ -128,8 +122,7 @@ section#hero-slider{
 
 
   div.next, div.previous{
-    position: absolute;
-    bottom: 2rem;
+    @include position(absolute, $bottom: 2rem);
     z-index: 3;
     cursor: pointer;
     @include d-flex(row, space-between, center);

@@ -87,7 +87,7 @@ export default {
 header{
   height: 4rem;
   width: 100vw;
-  position: relative;
+  @include position(relative);
 
   @include breakpoint-up(large){
     @include d-flex(row, space-between, center);
@@ -96,7 +96,7 @@ header{
   nav.navbar{
     height: 100%;
     width: 100%;
-    position: relative;
+    @include position(relative);
     z-index: 5;
     background-color: $white;
     @include d-flex(row, space-evenly, center);
@@ -131,10 +131,7 @@ header{
   }
 
   div.input-box{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    @include position(absolute, $top: 0, $left: 0, $bottom: 0);
     z-index: 4;
     width: 100vw;
     height: 100%;
@@ -143,7 +140,7 @@ header{
     @include transition;
 
     @include breakpoint-up(large){
-      position: relative;
+      @include position(relative);
       top: 0;
       width: 20vw;
       height: 100%;
@@ -162,11 +159,7 @@ header{
   }
 
   ul.menu{
-    position: absolute;
-    top: -100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @include position(absolute, $top: -100vh, $left: 0, $bottom: 0, $right: 0);
     width: 100vw;
     height: 100vh;
     z-index: 4;
@@ -176,7 +169,7 @@ header{
     @include transition;
 
     @include breakpoint-up(large){
-      position: relative;
+      @include position(relative);
       top: 0;
       width: 60vw;
       height: 100%;

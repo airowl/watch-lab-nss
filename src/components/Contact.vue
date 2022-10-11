@@ -30,11 +30,11 @@ section#contact{
   background-size: cover;
   height: 15.5rem;
   width: 100%;
-  position: relative;
+  @include position(relative);
   @include d-flex(row, center, center);
 
   div.content{
-    position: relative;
+    @include position(relative);
     z-index: 5;
 
     h2{

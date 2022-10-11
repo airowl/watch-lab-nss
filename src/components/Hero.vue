@@ -32,7 +32,7 @@ export default {
 <style lang='scss' scoped>
 section#hero{
   width: 100vw;
-  position: relative;
+  @include position(relative);
   
   div.wrapper{
     background-image: url('../assets/images/hero.jpg');
@@ -50,7 +50,7 @@ section#hero{
   }
 
   div.hero-content{
-    position: relative;
+    @include position(relative);
     z-index: 3;
     height: 100%;
     width: 100%;
