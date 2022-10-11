@@ -76,14 +76,15 @@ export default {
 
 <style lang="scss" scoped>
 section#hero-slider{
-  width: 100%;
-  height: 14rem;
+  width: 100vw;
+  height: 40vh;
   position: relative;
   z-index: 3;
   color: $white;
   
 
   @include breakpoint-up(large){
+    height: 14rem;
     width: 19.5rem;
     position: absolute;
     bottom: 0;

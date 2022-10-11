@@ -43,14 +43,15 @@ export default {
 
 <style lang="scss" scoped>
 section#gallery{
+  margin-bottom: 3.13rem;
 
   @include breakpoint-up(large){
     @include d-flex(row, center, center);
   };
 
   .main-image, .gallery-image{
-    width: 100%;
-    height: 25rem;
+    width: 100vw;
+    height: 40vh;
 
     @include breakpoint-up(large){
       width: 50%;
@@ -85,7 +86,7 @@ section#gallery{
 
       p{
         position: absolute;
-        top: 8rem;
+        top: 5rem;
         left: 50%;
         transform: translate(-50%, -50%);
 

@@ -79,10 +79,6 @@ p{
     line-height: 2;
     font-size: .8rem;
     letter-spacing: 2px;
-
-    @include breakpoint-up(large){
-      
-    };
   }
 
   font-size: 0.75rem;

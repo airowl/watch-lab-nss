@@ -10,29 +10,27 @@
     </div>
     <div class="slider">
       <div class="carousel">
-        <div class="carousel-inner">
-          <div class="wrapper-image">
-            <div class="image" :class="i === indexActive ? 'is-active' : ''" v-for="(e, i) in sliderData" :key='i'  :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
+        <div class="wrapper-image">
+          <div class="image" :class="i === indexActive ? 'is-active' : ''" v-for="(e, i) in sliderData" :key='i'  :style="{ backgroundImage: `url(${require('@/assets/images/' + e.image)})` }">
+          </div>
+        </div>
+        <div class="description">
+          <div class="wrapper-text">
+            <div class="text" :class="i === indexActive ? 'is-active' : ''"  v-for="(e, i) in sliderData" :key='i'>
+              <p class="up-b">
+                {{e.preTitle}}
+              </p>
+              <p class="up-b">
+                {{e.date}}
+              </p>
+              <h4>
+                {{e.title}}
+              </h4>
             </div>
           </div>
-          <div class="description">
-            <div class="wrapper-text">
-              <div class="text" :class="i === indexActive ? 'is-active' : ''"  v-for="(e, i) in sliderData" :key='i'>
-                <p class="up-b">
-                  {{e.preTitle}}
-                </p>
-                <p class="up-b">
-                  {{e.date}}
-                </p>
-                <h4>
-                  {{e.title}}
-                </h4>
-              </div>
-            </div>
-            <div class="icons">
-              <i class="fa-solid fa-chevron-left fa-2xs" @click="downIndexActive()"></i>
-              <i class="fa-solid fa-chevron-right fa-2xs" @click="upIndexActive()"></i>
-            </div>
+          <div class="icons">
+            <i class="fa-solid fa-chevron-left fa-2xs" @click="downIndexActive()"></i>
+            <i class="fa-solid fa-chevron-right fa-2xs" @click="upIndexActive()"></i>
           </div>
         </div>
       </div>
@@ -110,6 +108,7 @@ section#blog-slider{
 
   @include breakpoint-up(large){
     @include d-flex(row, center, center);
+    margin: 5.63rem 0;
   };
 
   .slider, .content{
@@ -123,6 +122,7 @@ section#blog-slider{
 
   .content{
     padding: 0 1rem;
+    padding-bottom: 2rem;
 
     @include breakpoint-up(large){
       padding: 0;
@@ -140,38 +140,28 @@ section#blog-slider{
   .slider{
     background-color: #f8f9f8;
     position: relative;
-    height: 50rem;
 
     @include breakpoint-up(large){
       height: 36rem;
     };
 
     div.carousel{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      @include d-flex(column, center, center);
+      @include transition;
 
       @include breakpoint-up(large){
-        height: 28rem;
+        @include d-flex(row, center, center);
+        height: 26rem;
         width: 50rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
       };
-
-      div.carousel-inner{
-        height: 100%;
-        width: 100%;
-        @include d-flex(column, center, center);
-        @include transition;
-
-        @include breakpoint-up(large){
-          @include d-flex(row, center, center);
-        };
 
         div.wrapper-image{
           overflow: hidden;
-          width: 100%;
-          height: 60%;
+          width: 100vw;
+          height: 40vh;
           position: relative;
 
           @include breakpoint-up(large){
@@ -199,8 +189,8 @@ section#blog-slider{
         }
   
         div.description{
-          width: 100%;
-          height: 40%;
+          width: 100vw;
+          height: 30vh;
           padding-left: 2rem;
           padding-top: 2rem;
           padding-right: 2rem;
@@ -214,12 +204,12 @@ section#blog-slider{
 
           div.wrapper-text{
             position: relative;
-            height: 70%;
+            height: 80%;
             @include d-flex(row, center, center);
             overflow: hidden;
 
             @include breakpoint-up(large){
-            height: 45%;
+              height: 45%;
             };
 
             div.text{
@@ -249,6 +239,7 @@ section#blog-slider{
 
         div.icons{
           //margin-top: 2.5rem;
+          height: 20%;
 
           i{
             cursor: pointer;
@@ -258,7 +249,6 @@ section#blog-slider{
             }
           }
         }
-      }
     }
   }
 }

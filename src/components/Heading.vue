@@ -22,7 +22,13 @@ export default {
 
 <style lang="scss" scoped>
 section#heading{
+  padding: 2rem 0;
 
+  @include breakpoint-up(large){
+    margin-bottom: 5.63rem;
+    margin-top: 3.63rem;
+    padding: 0;
+  };
 
   h2, p{
     padding: 0 1rem;
