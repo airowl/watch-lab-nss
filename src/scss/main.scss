@@ -25,7 +25,7 @@ h1{
 
 // general titles
 h2{
-  font-size: $font-m-xl;
+  font-size: 1.7rem;
   letter-spacing: 3px;
   color: $black;
   font-family: "Miller", "sans-serif";
@@ -84,16 +84,32 @@ p{
     };
   }
 
-  font-size: $font-m-sm;
+  font-size: 0.75rem;
 }
 
 ul li{
-  font-size: $font-m-md;
-  color: $black;
 
-  @include breakpoint-up(large){
-    font-size: $font-d-sm; // ok size
-  };
+
+  a.header{
+    font-size: 1.5rem;
+    color: $black;
+
+    @include transition;
+      letter-spacing: 1px;
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+    @include breakpoint-up(large){
+      font-size: 0.75rem;
+    };
+  }
+
+  a.footer{
+    font-size: .75rem;
+  }
+
 }
 
 ul{

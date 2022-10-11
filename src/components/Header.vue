@@ -20,7 +20,7 @@
 
     <ul class="menu" :class='isOpenHam ? "is-active" : "" '>
       <li v-for="(e, i) in headerData" :key="i">
-        <a :href="e.url">
+        <a :href="e.url" class="header">
           {{e.text}}
         </a>
       </li>
@@ -144,6 +144,7 @@ header{
       }
 
       $size-translate: .69rem;
+      $size-translate-negative: -.69rem;
 
       #hamburger-1.is-active .line:nth-child(1){
         -webkit-transform: translateY($size-translate) rotate(45deg);
@@ -153,10 +154,10 @@ header{
       }
 
       #hamburger-1.is-active .line:nth-child(3){
-        -webkit-transform: translateY($size-translate) rotate(-45deg);
-        -ms-transform: translateY($size-translate) rotate(-45deg);
-        -o-transform: translateY($size-translate) rotate(-45deg);
-        transform: translateY($size-translate) rotate(-45deg);
+        -webkit-transform: translateY($size-translate-negative) rotate(-45deg);
+        -ms-transform: translateY($size-translate-negative) rotate(-45deg);
+        -o-transform: translateY($size-translate-negative) rotate(-45deg);
+        transform: translateY($size-translate-negative) rotate(-45deg);
       }
     }
 
@@ -228,16 +229,6 @@ header{
         margin-left: 4rem;
         margin-bottom: 0;
       };
-
-      a{
-        color: $black;
-        @include transition;
-        letter-spacing: 1px;
-
-        &:hover{
-          text-decoration: underline;
-        }
-      }
 
     }
   }

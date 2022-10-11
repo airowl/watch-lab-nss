@@ -10,17 +10,17 @@
         </div>
         <ul class="nav1">
           <li v-for="(e,i) in nav1" :key='i'>
-            <a :href="e.url">{{e.text}}</a>
+            <a :href="e.url" class="footer">{{e.text}}</a>
           </li>
         </ul>
         <ul class="nav2">
           <li v-for="(e,i) in nav2" :key='i'>
-            <a :href="e.url">{{e.text}}</a>
+            <a :href="e.url" class="footer">{{e.text}}</a>
           </li>
         </ul>
         <ul class="contacts">
           <li v-for="(e,i) in contacts" :key='i'>
-            <a :href="e.url" :class="e.social ? 'social' : ''">{{e.text}}</a>
+            <a :href="e.url" class="footer" :class="e.social ? 'social' : ''">{{e.text}}</a>
           </li>
         </ul>
       </div>
@@ -116,7 +116,6 @@ footer{
 
     div.content{
       font-family: "Merriweather", "sans-serif";
-      font-size: .8rem;
       color: $text-footer;
 
       @include breakpoint-up(large){
@@ -124,7 +123,6 @@ footer{
         grid-template-columns: 3fr 1.5fr 1.5fr 3fr;
         gap: 1rem;
         justify-items: start;
-        font-size: .9rem;
       };
 
       a{
