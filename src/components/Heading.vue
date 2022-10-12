@@ -1,7 +1,7 @@
 <template>
   <section id="heading" data-aos="fade-up">
     <h2>
-      History and Patriarcal Season
+      History and Patriarcal season
     </h2>
     <div class="text">
       <p class="mer">
