@@ -88,7 +88,7 @@ export default {
             social: true
           },
           {
-            text: 'instragram',
+            text: 'instagram',
             url: '#',
             social: true
           },

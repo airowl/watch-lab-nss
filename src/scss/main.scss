@@ -75,17 +75,16 @@ p{
 
 ul li{
 
-
   a.header{
     font-size: 1.5rem;
     color: $black;
 
     @include transition;
-      letter-spacing: 1px;
+    letter-spacing: 1px;
 
-      &:hover{
-        text-decoration: underline;
-      }
+    &:hover{
+      text-decoration: underline;
+    }
 
     @include breakpoint-up(large){
       font-size: 0.75rem;
