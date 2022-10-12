@@ -52,21 +52,21 @@ export default {
           preTitle: 'press',
           title: 'Most Important Days on Watchlab',
           date: '18 settembre 2015',
-          image: 'hero-slider.jpg',
+          image: 'blog-1.jpg',
           url: '#',
         },
         {
-          preTitle: 'press',
-          title: 'Most Important Days',
-          date: '18 settembre 2015',
-          image: 'gallery-1.jpg',
+          preTitle: 'top',
+          title: 'Title Blog 1',
+          date: '12 settembre 2015',
+          image: 'blog-2.jpg',
           url: '#',
         },
         {
-          preTitle: 'press',
-          title: 'Most Important',
-          date: '18 settembre 2015',
-          image: 'gallery-2.jpg',
+          preTitle: 'good',
+          title: 'Title Blog 2',
+          date: '9 ottobre 2015',
+          image: 'blog-3.jpg',
           url: '#',
         },
       ]
@@ -176,6 +176,7 @@ section#blog-slider{
             @include position(absolute, $top: 0, $left: 100%, $bottom: 0, $right: 0);
             display: inline-block;
             @include default-bg;
+            filter: grayscale(100%);
             opacity: 0;
             @include transition;
   

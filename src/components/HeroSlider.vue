@@ -34,15 +34,15 @@ export default {
       sliderData: [
         {
           text: 'The Path to Success with Watchlab',
-          image: 'hero-slider.jpg',
+          image: 'hero-slider-1.jpg',
         },
         {
-          text: 'The Path to Success with Watchlablab',
-          image: 'gallery-1.jpg',
+          text: 'Title Blog 1',
+          image: 'hero-slider-2.jpg',
         },
         {
-          text: 'The Path to Success with Watchlablablab',
-          image: 'gallery-2.jpg',
+          text: 'Title Blog 2',
+          image: 'hero-slider-3.jpg',
         },
       ]
     }
@@ -95,6 +95,12 @@ section#hero-slider{
     @include position(absolute, $bottom: 0, $right: 5rem);
     height: 14rem;
     width: 19.5rem;
+  };
+
+  @include breakpoint-up(xx-large){
+    @include position(absolute, $bottom: 0, $right: 5rem);
+    height: 18rem;
+    width: 23.5rem;
   };
 
   div.carousel{

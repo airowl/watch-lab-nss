@@ -75,23 +75,26 @@ p{
 
 ul li{
 
-  a.header{
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    color: $black;
-    @include transition;
+  a{
+    &.header{
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      color: $black;
+      @include transition;
+  
+      @include breakpoint-up(large){
+        font-size: 0.75rem;
+      };
+    }
+  
+    &.footer{
+      font-size: .75rem;
+    }
 
     &:hover{
       text-decoration: underline;
     }
-
-    @include breakpoint-up(large){
-      font-size: 0.75rem;
-    };
   }
 
-  a.footer{
-    font-size: .75rem;
-  }
 
 }

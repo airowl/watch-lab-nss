@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer data-aos="fade-up">
     <div class="top-footer">
       <h1>Watch/lab</h1>
       <div class="content">
@@ -158,6 +158,16 @@ footer{
           &:not(last-child){
             margin-bottom: 1.3rem;
           }
+        }
+      }
+
+      ul.contacts{
+
+        a.social{
+          font-family: "Montserrat-b", "sans-serif";
+          font-size: 0.75rem;
+          letter-spacing: 3px;
+          text-transform: uppercase !important;
         }
       }
     }
