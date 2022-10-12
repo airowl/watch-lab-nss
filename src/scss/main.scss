@@ -125,11 +125,13 @@ div.overlay{
   bottom: 0;
   z-index: 1;
 
-  &.dark{
+  &-dark{
+    @extend .overlay;
     background-color: rgba($color: $black, $alpha: .4);
   }
 
-  &.light{
+  &-light{
+    @extend .overlay;
     background-color: rgba($color: $bg-logo, $alpha: .8);
   }
 }

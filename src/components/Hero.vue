@@ -1,7 +1,7 @@
 <template>
   <section id="hero">
     <div class="wrapper">
-      <div class="overlay dark"></div>
+      <div class="overlay-dark"></div>
 
       <div class="hero-content">
         <p class="up-b text-center">London collection season</p>

@@ -1,6 +1,6 @@
 <template>
   <section id="contact" data-aos="fade-up">
-    <div class="overlay light"></div>
+    <div class="overlay-light"></div>
     <div class="content">
       <h2 class="text-center">
         Get in Touch
