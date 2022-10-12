@@ -2,20 +2,8 @@
 @import 'mixins.scss';
 @import 'breakpoints.scss';
 @import 'helpers.scss';
+@import 'reset.scss';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
-
-*,
-*::after,
-*::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
 
 // logo
 h1{
@@ -108,31 +96,4 @@ ul li{
     font-size: .75rem;
   }
 
-}
-
-ul{
-  list-style-type: none;
-}
-
-a{
-  text-decoration: none;
-}
-
-div.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-
-  &-dark{
-    @extend .overlay;
-    background-color: rgba($color: $black, $alpha: .4);
-  }
-
-  &-light{
-    @extend .overlay;
-    background-color: rgba($color: $bg-logo, $alpha: .8);
-  }
 }
