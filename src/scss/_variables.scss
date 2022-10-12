@@ -9,8 +9,10 @@ $black: #000;
 $text-p: #858483;
 $text-footer: #d4ac84;
 
-// fonts family
+// breakpoints
+$breakpoints: ("small": "46rem", "medium": "48rem", "large": "62rem", "x-large": "75rem", "xx-large": "87.5rem");
 
+// fonts family
 @font-face {
   font-family: 'Montserrat-r';
   src: local('Montserrat-r'), url('@/scss/fonts/Montserrat-Regular.ttf')  format('truetype'), 

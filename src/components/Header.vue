@@ -176,6 +176,10 @@ header{
       z-index: 5;
       @include d-flex(row, start, center);
     };
+
+    @include breakpoint-up(large){
+      @include d-flex(row, center, center);
+    };
     
 
     &.is-active{
