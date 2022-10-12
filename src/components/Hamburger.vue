@@ -17,11 +17,11 @@ export default {
 
 <style lang='scss' scoped>
 .hamburger .line{
+  display: block;
   width: 2.5rem;
   height: .19rem;
-  background-color: $black;
-  display: block;
   margin: 0.5rem auto;
+  background-color: $black;
   @include transition;
 }
 

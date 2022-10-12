@@ -16,11 +16,11 @@ export default {
 
 <style lang='scss' scoped>
 a.btn{
+  @include d-flex(row, center, center);
   width: 13.5625rem;
   height: 2.6875rem;
-  border: 1px solid $text-footer;
   color: $text-footer;
-  @include d-flex(row, center, center);
+  border: 1px solid $text-footer;
   @include transition;
 
   &:hover{

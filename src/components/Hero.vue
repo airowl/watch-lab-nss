@@ -31,15 +31,15 @@ export default {
 
 <style lang='scss' scoped>
 section#hero{
-  width: 100vw;
   @include position(relative);
+  width: 100vw;
   
   div.wrapper{
-    background-image: url('../assets/images/hero.jpg');
-    @include default-bg(bottom);
     width: 100%;
     height: 36.5rem;
     color: $white;
+    background-image: url('../assets/images/hero.jpg');
+    @include default-bg(bottom);
 
     @include breakpoint-up(x-large){
       height: 40rem;
@@ -50,9 +50,9 @@ section#hero{
   div.hero-content{
     @include position(relative);
     z-index: 3;
+    @include d-flex(column, center, center);
     height: 100%;
     width: 100%;
-    @include d-flex(column, center, center);
 
     h2{
       margin-bottom: 2.19rem; // 35px

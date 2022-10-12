@@ -7,53 +7,53 @@
 
 // logo
 h1{
-  font-size: 1.7rem;
   font-family: "Montserrat-b", "sans-serif";
+  font-size: 1.7rem;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 // general titles
 h2{
+  font-family: "Miller", "sans-serif";
   font-size: 1.7rem;
   letter-spacing: 3px;
   color: $black;
-  font-family: "Miller", "sans-serif";
 
   @include breakpoint-up(large){
     font-size: 3.5rem;
-  };
+  }
 }
 
-h3{
+h3 {
+  font-family: "Miller", "sans-serif";
   font-size: 1.7rem;
   letter-spacing: 1px;
   color: $black;
-  font-family: "Miller", "sans-serif";
 
-  @include breakpoint-up(large){
+  @include breakpoint-up(large) {
     font-size: 2.5rem;
-  };
+  }
 }
 
 h4{
-  font-size: 2rem;
   font-family: "Miller", "sans-serif";
+  font-size: 2rem;
 }
 
 h5{
+  @include position(relative);
+  z-index: 3;
   font-family: "Miller", "sans-serif";
   font-size: 1rem;
-  position: relative;
-  z-index: 3;
   width: 50%;
 }
 
 p{
   &.up-b{
-    letter-spacing: 3px;
     font-family: "Montserrat-b", "sans-serif";
     font-size: 0.75rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
   }
 
@@ -64,10 +64,10 @@ p{
 
   &.mer{
     font-family: "Merriweather", "sans-serif";
-    color: $text-p;
-    line-height: 2;
     font-size: .8rem;
     letter-spacing: 2px;
+    line-height: 2;
+    color: $text-p;
   }
 
   font-size: 0.75rem;
@@ -77,10 +77,9 @@ ul li{
 
   a.header{
     font-size: 1.5rem;
-    color: $black;
-
-    @include transition;
     letter-spacing: 1px;
+    color: $black;
+    @include transition;
 
     &:hover{
       text-decoration: underline;

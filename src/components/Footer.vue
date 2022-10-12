@@ -102,16 +102,16 @@ export default {
 footer{
 
   div.top-footer{
-    background-color: $bg-footer-top;
     padding: 4rem 2rem;
+    background-color: $bg-footer-top;
 
     @include breakpoint-up(large){
       padding: 7.38rem 8.88rem 12rem;
     };
 
     h1{
-      color: $white;
       margin-bottom: 2.5rem;
+      color: $white;
     }
 
     div.content{
@@ -159,21 +159,8 @@ footer{
             margin-bottom: 1.3rem;
           }
         }
-
-      }
-
-      ul.contacts{
-
-        a.social{
-          letter-spacing: 3px;
-          font-family: "Montserrat-b", "sans-serif";
-          font-size: 0.75rem;
-          text-transform: uppercase !important;
-
-        }
       }
     }
-
   }
 
   div.bottom-footer{

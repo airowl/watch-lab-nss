@@ -24,12 +24,12 @@ export default {
 
 <style lang="scss" scoped>
 section#contact{
-  background-image: url('../assets/images/contact.jpg');
-  @include default-bg;
-  height: 15.5rem;
-  width: 100%;
   @include position(relative);
   @include d-flex(row, center, center);
+  height: 15.5rem;
+  width: 100%;
+  background-image: url('../assets/images/contact.jpg');
+  @include default-bg;
 
   div.content{
     @include position(relative);
@@ -48,16 +48,16 @@ section#contact{
     form{
       
       input#email, button{
-        border: 1px solid $white;
         font-family: "Merriweather", "sans-serif";
+        color: $white;
+        border: 1px solid $white;
         background-color: transparent;
         padding: .94rem;
-        color: $white;
       }
 
       input#email{
-        margin-right: 1rem;
         width: 16.75rem;
+        margin-right: 1rem;
 
         &::placeholder {
           color: $white;

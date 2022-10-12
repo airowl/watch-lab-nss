@@ -85,21 +85,21 @@ export default {
 
 <style lang='scss' scoped>
 header{
+  @include position(relative);
   height: 4rem;
   width: 100vw;
-  @include position(relative);
 
   @include breakpoint-up(large){
     @include d-flex(row, space-between, center);
   };
 
   nav.navbar{
-    height: 100%;
-    width: 100%;
     @include position(relative);
     z-index: 5;
-    background-color: $white;
     @include d-flex(row, space-evenly, center);
+    height: 100%;
+    width: 100%;
+    background-color: $white;
 
     @include breakpoint-up(large){
       @include d-flex(row, start, center);
@@ -107,11 +107,11 @@ header{
     };
 
     a#logo{
-      background-color: $bg-logo;
+      @include d-flex(row, center, center);
       width: 60vw;
       height: 100%;
       color: $white;
-      @include d-flex(row, center, center);
+      background-color: $bg-logo;
       
       @include breakpoint-up(large){
         width: 100%;
@@ -130,51 +130,23 @@ header{
 
   }
 
-  div.input-box{
-    @include position(absolute, $top: 0, $left: 0, $bottom: 0);
-    z-index: 4;
-    width: 100vw;
-    height: 100%;
-    background-color: $white;
-    @include d-flex(row, center, center);
-    @include transition;
-
-    @include breakpoint-up(large){
-      @include position(relative);
-      top: 0;
-      width: 20vw;
-      height: 100%;
-      z-index: 5;
-    };
-
-    &.is-active{
-      top: 4rem;
-    }
-
-    input#search{
-      border: 0;
-      border-bottom: 1px solid black;
-      width: 6rem;
-    }
-  }
-
   ul.menu{
     @include position(absolute, $top: -100vh, $left: 0, $bottom: 0, $right: 0);
+    z-index: 4;
+    @include d-flex(column, center, center);
     width: 100vw;
     height: 100vh;
-    z-index: 4;
-    background-color: $white;
     font-family: "Montserrat-r", "sans-serif";
-    @include d-flex(column, center, center);
+    background-color: $white;
     @include transition;
 
     @include breakpoint-up(large){
       @include position(relative);
       top: 0;
-      width: 60vw;
-      height: 100%;
       z-index: 5;
       @include d-flex(row, start, center);
+      width: 60vw;
+      height: 100%;
     };
 
     @include breakpoint-up(large){
@@ -194,6 +166,34 @@ header{
         margin-bottom: 0;
       };
 
+    }
+  }
+
+  div.input-box{
+    @include position(absolute, $top: 0, $left: 0, $bottom: 0);
+    z-index: 4;
+    @include d-flex(row, center, center);
+    width: 100vw;
+    height: 100%;
+    background-color: $white;
+    @include transition;
+
+    @include breakpoint-up(large){
+      @include position(relative);
+      top: 0;
+      z-index: 5;
+      width: 20vw;
+      height: 100%;
+    };
+
+    &.is-active{
+      top: 4rem;
+    }
+
+    input#search{
+      width: 6rem;
+      border: 0;
+      border-bottom: 1px solid black;
     }
   }
 

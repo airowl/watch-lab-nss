@@ -143,8 +143,8 @@ section#blog-slider{
   }
 
   .slider{
-    background-color: #f8f9f8;
     @include position(relative);
+    background-color: #f8f9f8;
 
     @include breakpoint-up(large){
       height: 36rem;
@@ -155,17 +155,17 @@ section#blog-slider{
       @include transition;
 
       @include breakpoint-up(large){
+        @include position(absolute, $bottom: 2rem, $right: 0);
         @include d-flex(row, center, center);
         height: 26rem;
         width: 50rem;
-        @include position(absolute, $bottom: 2rem, $right: 0);
       };
 
         div.wrapper-image{
-          overflow: hidden;
+          @include position(relative);
           width: 100vw;
           height: 40vh;
-          @include position(relative);
+          overflow: hidden;
 
           @include breakpoint-up(large){
             width: 60%;
@@ -173,9 +173,9 @@ section#blog-slider{
           };
 
           a.image{
+            @include position(absolute, $top: 0, $left: 100%, $bottom: 0, $right: 0);
             display: inline-block;
             @include default-bg;
-            @include position(absolute, $top: 0, $left: 100%, $bottom: 0, $right: 0);
             opacity: 0;
             @include transition;
   
@@ -207,8 +207,8 @@ section#blog-slider{
 
           div.wrapper-text{
             @include position(relative);
-            height: 80%;
             @include d-flex(row, center, center);
+            height: 80%;
             overflow: hidden;
 
             @include breakpoint-up(large){

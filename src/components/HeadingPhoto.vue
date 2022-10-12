@@ -58,6 +58,7 @@ section#heading-photo{
   .content{
     @include d-flex(column, center, center);
     margin: 2rem 0;
+    
     @include breakpoint-up(large){
       margin: 0;
     };
