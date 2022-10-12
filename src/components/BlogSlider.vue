@@ -137,7 +137,7 @@ section#blog-slider{
       margin-top: 3rem;
 
       @include breakpoint-up(large){
-        width: 50%;
+        width: 54%;
       };
     }
   }

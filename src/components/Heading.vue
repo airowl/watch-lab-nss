@@ -60,7 +60,7 @@ section#heading{
 
       @include breakpoint-up(large){
         margin-bottom: 0;
-        padding-right: 4.5rem;
+        padding-right: 3rem;
       };
     }
   }

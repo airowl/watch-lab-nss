@@ -39,9 +39,9 @@ section#hero{
     height: 36.5rem;
     color: $white;
     background-image: url('../assets/images/hero.jpg');
-    @include default-bg(bottom);
+    @include default-bg(center);
 
-    @include breakpoint-up(x-large){
+    @include breakpoint-up(xx-large){
       height: 40rem;
     };
 

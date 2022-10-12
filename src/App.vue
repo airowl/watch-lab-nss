@@ -14,7 +14,7 @@
     <HeadingPhoto 
       image='building-2.jpg'
       preTitle='London collection season'
-      title='New Selection Of Herny London'
+      title='New Selection Herny London'
       text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire'
       :isRightTitle=true
       url='#'

@@ -176,12 +176,16 @@ footer{
   div.bottom-footer{
     @include d-flex(row, space-between, center);
     padding: 2rem 1rem;
-    background-color: $bg-footer-bottom;
     color: $text-footer;
+    background-color: $bg-footer-bottom;
 
     @include breakpoint-up(large){
-      padding: 2rem 9rem;
+      padding: 1.6rem 9rem;
     };
+
+    p{
+      font-size: 0.75rem;
+    }
   }
 }
 </style>

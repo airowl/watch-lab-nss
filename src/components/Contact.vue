@@ -53,6 +53,12 @@ section#contact{
         border: 1px solid $white;
         background-color: transparent;
         padding: .94rem;
+        @include transition;
+
+        &:hover{
+          color: $black;
+          background-color: $white;
+        }
       }
 
       input#email{
@@ -71,6 +77,10 @@ section#contact{
         &::-ms-input-placeholder {
           color: $white;
         }
+      }
+
+      button{
+        cursor: pointer;
       }
     }
   }

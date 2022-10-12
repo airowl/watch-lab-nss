@@ -149,7 +149,7 @@ header{
       height: 100%;
     };
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(xx-large){
       @include d-flex(row, center, center);
     };
     

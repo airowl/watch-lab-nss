@@ -6,7 +6,7 @@
       <p class="mer text-center">
         {{text}}
       </p>
-      <Button text="Discover" url="#" />
+      <Button text="View" url="#" />
     </div>
     <a class="main-image" :href="url">
       <div class="image" :style="{ backgroundImage: `url(${require('@/assets/images/' + image)})` }"></div>
@@ -56,8 +56,9 @@ section#heading-photo{
   }
 
   .content{
-    @include d-flex(column, center, center);
+    @include d-flex(column, start, center);
     margin: 2rem 0;
+    padding-top: 6.88rem;
     
     @include breakpoint-up(large){
       margin: 0;
@@ -67,8 +68,8 @@ section#heading-photo{
       margin-bottom: 2rem;
 
       @include breakpoint-up(large){
-        margin-bottom: 6rem;
-        padding: 0 6rem;
+        margin-bottom: 3.5rem;
+        padding: 0 7rem;
       };
     }
 
@@ -78,12 +79,12 @@ section#heading-photo{
         margin-bottom: 1rem;
 
         @include breakpoint-up(large){
-          margin-bottom: 2.3rem;
+          margin-bottom: 1.5rem;
         };
       }
 
       &.mer{
-        margin-bottom: 2.81rem; // 45px
+        margin-bottom: 2.4rem;
         padding: 0 1rem;
 
         @include breakpoint-up(large){

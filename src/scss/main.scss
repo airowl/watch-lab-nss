@@ -27,7 +27,7 @@ h2{
 
 h3 {
   font-family: "Miller", "sans-serif";
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   color: $black;
 
@@ -64,13 +64,13 @@ p{
 
   &.mer{
     font-family: "Merriweather", "sans-serif";
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: 2px;
-    line-height: 2;
+    line-height: 2.5;
     color: $text-p;
   }
 
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 ul li{
@@ -88,7 +88,7 @@ ul li{
     }
   
     &.footer{
-      font-size: .75rem;
+      font-size: .65rem;
     }
 
     &:hover{
