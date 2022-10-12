@@ -181,10 +181,6 @@ footer{
 
     @include breakpoint-up(large){
       padding: 1.6rem 9rem;
-    };
-
-    p{
-      font-size: 0.75rem;
     }
   }
 }
