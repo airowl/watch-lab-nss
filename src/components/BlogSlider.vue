@@ -157,7 +157,7 @@ section#blog-slider{
       @include breakpoint-up(large){
         @include position(absolute, $bottom: 2rem, $right: 0);
         @include d-flex(row, center, center);
-        height: 26rem;
+        height: 25rem;
         width: 50rem;
       };
 
