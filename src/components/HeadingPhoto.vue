@@ -47,7 +47,6 @@ section#heading-photo{
 
   a.main-image, .content{
     width: 100vw;
-    height: 40vh;
 
     @include breakpoint-up(large){
       width: 50%;
@@ -58,10 +57,11 @@ section#heading-photo{
   .content{
     @include d-flex(column, start, center);
     margin: 2rem 0;
-    padding-top: 6.88rem;
+    
     
     @include breakpoint-up(large){
       margin: 0;
+      padding-top: 6.88rem;
     };
 
     h3{
@@ -97,6 +97,7 @@ section#heading-photo{
   a.main-image{
     display: inline-block;
     overflow: hidden;
+    height: 40vh;
 
     .image{
       width: 100%;
