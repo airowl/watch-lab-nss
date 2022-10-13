@@ -108,7 +108,7 @@ header{
 
     a#logo{
       @include d-flex(row, center, center);
-      width: 60vw;
+      width: 75vw;
       height: 100%;
       color: $white;
       background-color: $bg-logo;
@@ -121,7 +121,7 @@ header{
     div.collapse{
       @include d-flex(row, space-evenly, center);
       height: 100%;
-      width: 40vw;
+      width: 35vw;
 
       @include breakpoint-up(large){
         display: none
