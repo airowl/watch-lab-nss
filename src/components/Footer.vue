@@ -108,7 +108,7 @@ footer{
     background-color: $bg-footer-top;
 
     @include breakpoint-up(large){
-      padding: 7.38rem 8.88rem 12rem;
+      padding: 7rem 8.88rem 10rem;
     };
 
     h1{

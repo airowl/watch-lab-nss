@@ -92,7 +92,7 @@ section#hero-slider{
   
 
   @include breakpoint-up(large){
-    @include position(absolute, $bottom: 0, $right: 5rem);
+    @include position(absolute, $bottom: 0, $right: 2rem);
     height: 14rem;
     width: 19.5rem;
   };

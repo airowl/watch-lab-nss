@@ -86,7 +86,7 @@ export default {
 <style lang='scss' scoped>
 header{
   @include position(relative);
-  height: 4rem;
+  height: 5rem;
   width: 100vw;
 
   @include breakpoint-up(large){
