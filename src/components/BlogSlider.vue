@@ -110,6 +110,7 @@ export default {
 <style lang='scss' scoped>
 section#blog-slider{
   @include d-flex(column, center, center);
+  margin: 1rem 0;
 
   @include breakpoint-up(large){
     @include d-flex(row, center, center);
@@ -144,10 +145,11 @@ section#blog-slider{
 
   .slider{
     @include position(relative);
-    background-color: #f8f9f8;
+    background-color: transparent;
 
     @include breakpoint-up(large){
       height: 36rem;
+      background-color: #f8f9f8;
     };
 
     div.carousel{

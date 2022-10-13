@@ -1,7 +1,9 @@
 <template>
   <footer data-aos="fade-up">
     <div class="top-footer">
-      <h1>Watch/lab</h1>
+      <a href="/" id="logo">
+        <h1>Watch/lab</h1>
+      </a>
       <div class="content">
         <div class="data-company">
           <p>Watch/Lab <span>Innovation brings success</span></p>
