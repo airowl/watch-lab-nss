@@ -194,7 +194,7 @@ section#blog-slider{
   
         div.description{
           width: 100vw;
-          height: 30vh;
+          height: 40vh;
           padding-left: 2rem;
           padding-top: 2rem;
           padding-right: 2rem;

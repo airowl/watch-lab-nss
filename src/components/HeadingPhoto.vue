@@ -99,6 +99,10 @@ section#heading-photo{
     overflow: hidden;
     height: 40vh;
 
+    @include breakpoint-up(large){
+      height: 36rem;
+    };
+
     .image{
       width: 100%;
       height: 100%;
