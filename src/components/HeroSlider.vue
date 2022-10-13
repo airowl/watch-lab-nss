@@ -37,11 +37,11 @@ export default {
           image: 'hero-slider-1.jpg',
         },
         {
-          text: 'Title Blog 1',
+          text: 'Title 1',
           image: 'hero-slider-2.jpg',
         },
         {
-          text: 'Title Blog 2',
+          text: 'Title 2',
           image: 'hero-slider-3.jpg',
         },
       ]
