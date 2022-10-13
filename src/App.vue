@@ -7,7 +7,7 @@
       image='building-1.jpg'
       preTitle='London collection season'
       title='Temporary Store'
-      text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire'
+      text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized by the charms of pleasure of the moment, so blinded by desire'
       :isRightTitle=false
       url='#'
     />
@@ -15,7 +15,7 @@
       image='building-2.jpg'
       preTitle='London collection season'
       title='New Selection Herny London'
-      text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire'
+      text='On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized by the charms of pleasure of the moment, so blinded by desire'
       :isRightTitle=true
       url='#'
     />

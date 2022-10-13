@@ -5,7 +5,7 @@
         Press from <br/> Watch Lab Studio
       </h2>
       <p class="mer">
-        On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire
+        On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized by the charms of pleasure of the moment, so blinded by desire
       </p>
     </div>
     <div class="slider">

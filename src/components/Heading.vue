@@ -5,7 +5,7 @@
     </h2>
     <div class="text">
       <p class="mer">
-        On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized bt the charms of pleasure of the moment, so blinded by desire
+        On the other hand, we denounce with righteous indingation and dislike men who are so beguiled and demorialized by the charms of pleasure of the moment, so blinded by desire
       </p>
       <p class="mer">
         But i must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No that are extremely painful
